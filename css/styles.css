@@ -39,6 +39,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -337,7 +338,7 @@ a {
   height: 70px;
   left: 0;
   bottom: 0;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,33 +359,29 @@ a {
 .team {
   background-color: var(--background-color-buttons);
 }
+
 .team-flex {
   display: flex;
   flex-wrap: wrap;
 }
+
 .team-list {
   display: flex;
   margin-right: calc(-1 * var(--card-set-gap));
 }
+
 .team-item {
   margin-right: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-info-container {
-  padding-top: 0;
-  padding-bottom: var(--card-set-gap);
-
+  padding: var(--card-set-gap) 32px;
   text-align: center;
   background-color: var(--hero-headline-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border: none;
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-img {
-  margin-bottom: var(--card-set-gap);
 }
 
 .team-title {
@@ -422,7 +419,8 @@ a {
   justify-content: center;
   fill: var(--social-icon-color);
   transition: color var(--transition-duration) var(--transition-timing-function),
-  background-color var(--transition-duration) var(--transition-timing-function);}
+  background-color var(--transition-duration) var(--transition-timing-function);
+}
 
 .social-link:hover,
 .social-link:focus {
@@ -642,6 +640,7 @@ a {
   margin-right: calc(-1 * var(--card-set-gap));
   margin-bottom: calc(-1 * var(--card-set-gap));
 }
+
 .examples-item {
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
@@ -653,6 +652,7 @@ a {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
+
 .examples-link:hover,
 .examples-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -661,6 +661,7 @@ a {
 
 .examples-border {
   padding: 20px 24px;
+  
   border: 1px solid var(--card-border-color);
   border-top: none;
 }
@@ -743,7 +744,7 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 300ms linear, opacity 300ms linear;
- }
+}
 
 .btn-modal {
   position: absolute;
